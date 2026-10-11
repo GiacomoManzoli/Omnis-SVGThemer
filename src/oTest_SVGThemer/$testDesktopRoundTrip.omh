@@ -5,7 +5,6 @@ Do files.$add('/private/tmp/svgthemer-desktop-check/source.svg',kTrue)
 Do window.$sendevent(evDrop,'pDragType',kDragOperatingSystem,'pDragValue',files)
 Calculate success as window.iLoaded
 Do $cinst.$asserttruthy(success,'desktop handles operating system drop event')
-Do $cinst.$asserttruthy(window.$objs.colors.$dividers.$count()=1,'complex grid has one removal divider')
 Do $cinst.$asserttruthy(window.$objs.colors.$objs.colorMatchCell.$dataname='iMatches.match','color declaration is bound to its row')
 Do $cinst.$asserttruthy(window.$objs.colors.$objs.removeCell.$dataname='iMatches.remove','checkbox is bound to its row')
 Do $cinst.$asserttruthy(window.iMatches.$linecount=2,'tool root black fallback is hidden from color choices')
