@@ -59,12 +59,12 @@
 		"subwindowstyle": false,
 		"text": {
 			"type": 0,
-			"calc": "Grigio"
+			"calc": "[con(StringTable.$gettext('wIconThemer.gray'),pick(iPreviewColor=rgb(130,130,130),'',' ✓'))]"
 		},
 		"textcolor": "RGB(130,130,130)",
 		"tooltip": {
 			"type": 0,
-			"calc": "Grigio #828282"
+			"calc": "[con(StringTable.$gettext('wIconThemer.gray'),' #828282')]"
 		},
 		"tooltippos": "kTooltipPosMouse",
 		"top": 440,

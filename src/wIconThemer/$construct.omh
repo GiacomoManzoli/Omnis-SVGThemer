@@ -2,15 +2,7 @@ Do iMatches.$define(match,remove,uuid)
 Calculate iFillTint as kTrue
 Calculate iStrokeTint as kTrue
 Calculate iPreviewColor as rgb(210,55,65)
-Do iColors.$define(label,color)
-Do iColors.$add('Rosso',rgb(210,55,65))
-Do iColors.$add('Blu',rgb(35,95,210))
-Do iColors.$add('Verde',rgb(30,155,85))
-Do iColors.$add('Viola',rgb(150,65,200))
-Do iColors.$add('Nero',rgb(0,0,0))
-Do iColors.$add('Grigio',rgb(130,130,130))
-Calculate iColors.$line as 1
 Calculate iLoaded as kFalse
-Calculate iStatus as 'Seleziona o trascina un file SVG per iniziare.'
+Calculate iStatus as StringTable.$gettext('wIconThemer.status_ready')
 
 Do method RedrawPreview

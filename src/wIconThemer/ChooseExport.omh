@@ -5,7 +5,7 @@ Do FileOps.$getfileinfo(iFilePath,kFileOpsInfoName) Returns fileInfo
 Calculate fileName as fileInfo.[1].name
 Calculate path as con('themed_',fileName)
 Calculate directory as left(iFilePath,len(iFilePath)-len(fileName))
-Do FileOps.$putfilename(path,'Esporta SVG elaborato','SVG|*.svg',directory) Returns selected
+Do FileOps.$putfilename(path,StringTable.$gettext('wIconThemer.export'),'SVG|*.svg',directory) Returns selected
 If selected
 	If low(right(path,4))<>'.svg'
 		Calculate path as con(path,'.svg')

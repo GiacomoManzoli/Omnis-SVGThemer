@@ -1,12 +1,12 @@
 If low(right(pPath,4))<>'.svg'
-	Calculate iStatus as 'Seleziona un file con estensione .svg.'
+	Calculate iStatus as StringTable.$gettext('wIconThemer.status_svg_required')
 	Do $cinst.$redraw()
 	Quit method kFalse
 End If
 Do file.$openfile(pPath,kTrue) Returns success
 If not(success)
 	Do file.$getlasterror(errorText)
-	Calculate iStatus as con('Impossibile aprire il file: ',errorText)
+	Calculate iStatus as con(StringTable.$gettext('wIconThemer.status_open_error'),errorText)
 	Do $cinst.$redraw()
 	Quit method kFalse
 End If
@@ -16,7 +16,7 @@ If not(success)
 End If
 Do file.$closefile()
 If not(success)
-	Calculate iStatus as con('Impossibile leggere il file: ',errorText)
+	Calculate iStatus as con(StringTable.$gettext('wIconThemer.status_read_error'),errorText)
 	Do $cinst.$redraw()
 	Quit method kFalse
 End If

@@ -68,7 +68,7 @@
 	},
 	{
 		"name": "$LoadFile",
-		"desc": "Read an SVG file and update the desktop UI only after successful parsing.",
+		"desc": "Bilingual UI from in-memory StringTable",
 		"pvardefs": [
 			{
 				"name": "pPath",
@@ -106,6 +106,7 @@
 	},
 	{
 		"name": "LoadBinary",
+		"desc": "Bilingual UI from in-memory StringTable",
 		"pvardefs": [
 			{
 				"name": "pBinary",
@@ -208,6 +209,7 @@
 	},
 	{
 		"name": "ChooseExport",
+		"desc": "Bilingual UI from in-memory StringTable",
 		"pvardefs": [
 
 		],
@@ -246,7 +248,7 @@
 	},
 	{
 		"name": "$ExportFile",
-		"desc": "Export the transformed SVG as UTF-8; the preview color is not embedded.",
+		"desc": "Bilingual UI from in-memory StringTable",
 		"pvardefs": [
 			{
 				"name": "pPath",
@@ -278,6 +280,7 @@
 	},
 	{
 		"name": "HandleDrop",
+		"desc": "Bilingual UI from in-memory StringTable",
 		"pvardefs": [
 			{
 				"name": "pFiles",

@@ -1,4 +1,4 @@
-Do FileOps.$getfilename(path,'Seleziona un SVG','SVG|*.svg') Returns selected
+Do FileOps.$getfilename(path,StringTable.$gettext('wIconThemer.open'),'SVG|*.svg') Returns selected
 If selected
 	Do $cinst.$LoadFile(path)
 End If

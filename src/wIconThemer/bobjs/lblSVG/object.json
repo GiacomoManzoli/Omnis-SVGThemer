@@ -1,7 +1,7 @@
 {
-	"ident": 1020,
+	"ident": 1045,
 	"order": 16386,
-	"objtype": "kLabel",
+	"objtype": "kText",
 	"properties": {
 		"align": "kLeftJst",
 		"backcolor": "RGBA(kColorBackFill,255)",
@@ -22,7 +22,10 @@
 		"left": 20,
 		"linestyle": 1,
 		"objlink": 0,
-		"text": "SVG elaborato",
+		"text": {
+			"type": 14,
+			"calc": "[StringTable.$gettext('wIconThemer.svg_output')]"
+		},
 		"textcolor": "kColorWindowText",
 		"top": 98,
 		"userinfo": "",

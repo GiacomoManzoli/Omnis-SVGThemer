@@ -1,9 +1,3 @@
 On evClick
 	Calculate iPreviewColor as rgb(0,0,0)
-	Calculate $cinst.$objs.previewColor.$text as 'Rosso'
-	Calculate $cinst.$objs.previewBlue.$text as 'Blu'
-	Calculate $cinst.$objs.previewGreen.$text as 'Verde'
-	Calculate $cinst.$objs.previewPurple.$text as 'Viola'
-	Calculate $cinst.$objs.previewBlack.$text as 'Nero ✓'
-	Calculate $cinst.$objs.previewGray.$text as 'Grigio'
 	Do method RedrawPreview

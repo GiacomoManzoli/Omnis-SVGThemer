@@ -1,6 +1,7 @@
 [
 	{
 		"name": "$construct",
+		"desc": "Bilingual UI from in-memory StringTable",
 		"pvardefs": [
 
 		],

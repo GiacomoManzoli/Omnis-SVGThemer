@@ -63,7 +63,7 @@
 		"subwindowstyle": false,
 		"text": {
 			"type": 0,
-			"calc": "Colore dinamico fill"
+			"calc": "[StringTable.$gettext('wIconThemer.dynamic_fill')]"
 		},
 		"textcolor": "kColorBtnText",
 		"tooltip": "",

@@ -30,7 +30,7 @@
 		"issupercomponent": false,
 		"title": {
 			"type": 0,
-			"calc": "SVG Themer"
+			"calc": "StringTable.$gettext('wIconThemer.window_title')"
 		},
 		"userinfo": "",
 		"users": "12345678",

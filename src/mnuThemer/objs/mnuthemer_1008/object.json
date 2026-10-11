@@ -13,7 +13,7 @@
 		"macshortcutkey": "",
 		"text": {
 			"type": 0,
-			"calc": "Apri"
+			"calc": "StringTable.$gettext('wIconThemer.menu_open')"
 		},
 		"unixshortcutkey": "",
 		"userinfo": "",

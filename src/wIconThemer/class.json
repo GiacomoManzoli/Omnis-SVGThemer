@@ -2,18 +2,12 @@
 	"classtype": "kWindow",
 	"omnisversion": "12.0",
 	"designtaskname": "Startup_Task",
-	"nextident": 1044,
+	"nextident": 1048,
 	"lastgroupident": 0,
 	"cvardefs": [
 
 	],
 	"ivardefs": [
-		{
-			"name": "iColors",
-			"type": "kList",
-			"subtype": "",
-			"sublen": 0
-		},
 		{
 			"name": "iFilePath",
 			"type": "kCharacter",
@@ -112,7 +106,7 @@
 		"issubwindow": false,
 		"issupercomponent": false,
 		"keepclicks": true,
-		"left": 529,
+		"left": 763,
 		"menuedge": "kBorderChisel",
 		"menunames": "",
 		"minheight": 700,
@@ -137,7 +131,7 @@
 		"toolbarnames": "",
 		"toolbaroptions": "kTBOptionNone",
 		"toolbarpos": "kDockingAreaNone",
-		"top": 116,
+		"top": 93,
 		"userinfo": "",
 		"usesheets": false,
 		"version": "",

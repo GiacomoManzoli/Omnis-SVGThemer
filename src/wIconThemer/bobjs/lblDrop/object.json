@@ -1,7 +1,7 @@
 {
-	"ident": 1019,
+	"ident": 1044,
 	"order": 16385,
-	"objtype": "kLabel",
+	"objtype": "kText",
 	"properties": {
 		"align": "kLeftJst",
 		"backcolor": "RGBA(kColorBackFill,255)",
@@ -22,7 +22,10 @@
 		"left": 20,
 		"linestyle": 1,
 		"objlink": 0,
-		"text": "Apri un file SVG oppure trascinalo qui. Viene elaborata una sola icona alla volta.",
+		"text": {
+			"type": 14,
+			"calc": "[StringTable.$gettext('wIconThemer.drop')]"
+		},
 		"textcolor": "kColorWindowText",
 		"top": 56,
 		"userinfo": "",

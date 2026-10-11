@@ -59,7 +59,7 @@
 		"subwindowstyle": false,
 		"text": {
 			"type": 0,
-			"calc": "Colore"
+			"calc": "[StringTable.$gettext('wIconThemer.color')]"
 		},
 		"textcolor": "kColorDefault",
 		"tooltip": "",

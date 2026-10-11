@@ -65,7 +65,7 @@
 		"textcolor": "kColorBtnText",
 		"tooltip": {
 			"type": 0,
-			"calc": "Rimuovi la dichiarazione di colore"
+			"calc": "StringTable.$gettext('wIconThemer.remove_declaration')"
 		},
 		"tooltippos": "kTooltipPosMouse",
 		"top": 0,

@@ -59,7 +59,7 @@
 		"subwindowstyle": false,
 		"text": {
 			"type": 0,
-			"calc": "Esporta SVG…"
+			"calc": "[StringTable.$gettext('wIconThemer.export')]"
 		},
 		"textcolor": "kColorDefault",
 		"tooltip": "",

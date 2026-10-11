@@ -59,7 +59,7 @@
 		"subwindowstyle": false,
 		"text": {
 			"type": 0,
-			"calc": "Rimuovi"
+			"calc": "[StringTable.$gettext('wIconThemer.remove')]"
 		},
 		"textcolor": "kColorDefault",
 		"tooltip": "",

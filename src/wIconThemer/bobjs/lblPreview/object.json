@@ -1,7 +1,7 @@
 {
-	"ident": 1025,
+	"ident": 1046,
 	"order": 16387,
-	"objtype": "kLabel",
+	"objtype": "kText",
 	"properties": {
 		"align": "kLeftJst",
 		"backcolor": "RGBA(kColorBackFill,255)",
@@ -22,7 +22,10 @@
 		"left": 20,
 		"linestyle": 1,
 		"objlink": 0,
-		"text": "Anteprima: 96 · 72 · 32 · 24 · 16 px",
+		"text": {
+			"type": 14,
+			"calc": "[StringTable.$gettext('wIconThemer.preview')]"
+		},
 		"textcolor": "kColorWindowText",
 		"top": 446,
 		"userinfo": "",

@@ -7,5 +7,5 @@ For index from 1 to pFiles.$linecount step 1
 		End If
 	End If
 End For
-Calculate iStatus as 'Trascina un file SVG dal sistema.'
+Calculate iStatus as StringTable.$gettext('wIconThemer.status_drop')
 Do $cinst.$redraw()
