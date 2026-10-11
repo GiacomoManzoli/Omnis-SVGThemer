@@ -122,27 +122,6 @@
 		]
 	},
 	{
-		"name": "removeColors",
-		"clientexec": false,
-		"desc": "Compatibility adapter: the transformation is implemented by oSVGThemer.",
-		"pvardefs": [
-			{
-				"name": "pXML",
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			}
-		],
-		"lvardefs": [
-			{
-				"name": "lXML",
-				"type": "kCharacter",
-				"subtype": "kSimplechar",
-				"sublen": 100000000
-			}
-		]
-	},
-	{
 		"name": "redrawXML",
 		"clientexec": false,
 		"pvardefs": [
