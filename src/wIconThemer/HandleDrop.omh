@@ -1,0 +1,11 @@
+For index from 1 to pFiles.$linecount step 1
+	Calculate path as pFiles.[index].1
+	If pFiles.[index].isfile
+		If low(right(path,4))='.svg'
+			Do $cinst.$LoadFile(path)
+			Quit method
+		End If
+	End If
+End For
+Calculate iStatus as 'Trascina un file SVG dal sistema.'
+Do $cinst.$redraw()

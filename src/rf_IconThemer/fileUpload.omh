@@ -1,0 +1,8 @@
+Do method parseXML (pBinary) Returns lSuccess
+If lSuccess
+	Do method prepareSVG
+Else
+	Do iSVGThemer.$GetError() Returns lError
+	Do $cinst.$showmessage(lError,'SVG non valido')
+End If
+Quit method lSuccess

@@ -1,0 +1,7 @@
+On evDrop
+	
+	Breakpoint
+	
+On evAfter
+	
+	Do method redrawXML

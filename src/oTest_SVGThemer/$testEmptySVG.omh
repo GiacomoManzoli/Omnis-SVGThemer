@@ -1,0 +1,6 @@
+Do lThemer.$LoadSVG(chartoutf8('<svg xmlns="http://www.w3.org/2000/svg"/>')) Returns lSuccess
+Do $cinst.$asserttruthy(lSuccess,'empty SVG terminates successfully')
+Do lThemer.$GetMatches() Returns lMatches
+Do lThemer.$BuildSVG(lMatches,kTrue,kTrue) Returns lXML
+Do $cinst.$asserttruthy(pos('id="omTheme"',lXML)>0,'empty SVG gets theme group')
+Quit method lXML

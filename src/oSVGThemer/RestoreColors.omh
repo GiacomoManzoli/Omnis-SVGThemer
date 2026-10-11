@@ -1,0 +1,11 @@
+Calculate lXML as pXML
+Calculate lMatches as pMatches
+For lMatches.$line from 1 to lMatches.$linecount step 1
+	Do lMatches.$loadcols(lMatch,lRemove,lUUID)
+	If lRemove
+		Calculate lXML as replace(lXML,lUUID,'')
+	Else
+		Calculate lXML as replace(lXML,lUUID,lMatch)
+	End If
+End For
+Quit method lXML

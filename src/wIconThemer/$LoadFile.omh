@@ -1,0 +1,24 @@
+If low(right(pPath,4))<>'.svg'
+	Calculate iStatus as 'Seleziona un file con estensione .svg.'
+	Do $cinst.$redraw()
+	Quit method kFalse
+End If
+Do file.$openfile(pPath,kTrue) Returns success
+If not(success)
+	Do file.$getlasterror(errorText)
+	Calculate iStatus as con('Impossibile aprire il file: ',errorText)
+	Do $cinst.$redraw()
+	Quit method kFalse
+End If
+Do file.$readfile(binary) Returns success
+If not(success)
+	Do file.$getlasterror(errorText)
+End If
+Do file.$closefile()
+If not(success)
+	Calculate iStatus as con('Impossibile leggere il file: ',errorText)
+	Do $cinst.$redraw()
+	Quit method kFalse
+End If
+Do method LoadBinary (binary,pPath) Returns success
+Quit method success

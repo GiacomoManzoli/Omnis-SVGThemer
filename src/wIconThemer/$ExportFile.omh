@@ -1,0 +1,23 @@
+If not(iLoaded)
+	Quit method kFalse
+End If
+Do method PrepareSVG
+Do file.$createfile(pPath) Returns success
+If not(success)
+	Do file.$getlasterror(errorText)
+	Calculate iStatus as con('Impossibile creare il file: ',errorText)
+	Do $cinst.$redraw()
+	Quit method kFalse
+End If
+Do file.$writefile(chartoutf8(iXML)) Returns success
+If not(success)
+	Do file.$getlasterror(errorText)
+End If
+Do file.$closefile()
+If success
+	Calculate iStatus as con('SVG esportato: ',pPath)
+Else
+	Calculate iStatus as con('Esportazione non riuscita: ',errorText)
+End If
+Do $cinst.$redraw()
+Quit method success

@@ -1,0 +1,14 @@
+Do iThemer.$LoadSVG(pBinary) Returns success
+If not(success)
+	Do iThemer.$GetError() Returns errorText
+	Calculate iStatus as con('SVG non valido: ',errorText)
+	Do $cinst.$redraw()
+	Quit method kFalse
+End If
+Calculate iFilePath as pPath
+Calculate iLoaded as kTrue
+Do iThemer.$GetMatches() Returns iMatches
+Calculate iStatus as 'SVG elaborato. Scegli i colori da rimuovere e le opzioni del tema.'
+Calculate $cinst.$objs.btnExport.$enabled as kTrue
+Do method PrepareSVG
+Quit method kTrue

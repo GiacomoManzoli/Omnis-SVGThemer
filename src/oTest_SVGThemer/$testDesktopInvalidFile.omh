@@ -1,0 +1,18 @@
+Do $libs.svgthemer1.$windows.wIconThemer.$open('*') Returns window
+Do window.$ExportFile('/private/tmp/svgthemer-desktop-check/should-not-exist.svg') Returns success
+Do $cinst.$assertfalsy(success,'export disabled before load')
+Do window.$LoadFile('/private/tmp/svgthemer-desktop-check/source.svg') Returns success
+Do $cinst.$asserttruthy(success,'initial file loads')
+Do window.$LoadFile('/private/tmp/svgthemer-desktop-check/invalid.svg') Returns success
+Do $cinst.$assertfalsy(success,'invalid file rejected')
+Do window.$ExportFile('/private/tmp/svgthemer-desktop-check/preserved.svg') Returns success
+Do $cinst.$asserttruthy(success,'previous valid SVG remains exportable')
+Do file.$openfile('/private/tmp/svgthemer-desktop-check/preserved.svg',kTrue)
+Do file.$readfile(binary)
+Do file.$closefile()
+Calculate xml as utf8tochar(binary)
+Do $cinst.$asserttruthy(pos('M2 2h20v20H2z',xml)>0,'previous geometry preserved')
+Do window.$LoadFile('/private/tmp/svgthemer-desktop-check/missing.svg') Returns success
+Do $cinst.$assertfalsy(success,'missing file rejected')
+Do window.$close()
+Quit method xml

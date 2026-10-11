@@ -1,0 +1,46 @@
+{
+	"classtype": "kObjectclass",
+	"omnisversion": "12.0",
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "iError",
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iMatches",
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iTemplate",
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		}
+	],
+	"properties": {
+		"canremotedebugwhenlocked": false,
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componentinfo": {
+
+		},
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2026-10-11 19:39:22",
+		"desc": "Trasformazione SVG per il colore dinamico Omnis. Mantiene il nero sulla radice e i pattern colore semplici.",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"selfcontained": false,
+		"userinfo": "",
+		"version": ""
+	}
+}

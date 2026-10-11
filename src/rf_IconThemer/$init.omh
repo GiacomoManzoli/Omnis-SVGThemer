@@ -1,0 +1,3 @@
+#
+JavaScript:let root = document.documentElement;
+JavaScript:root.style.setProperty("--om-tint-color","red")

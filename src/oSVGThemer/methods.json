@@ -1,0 +1,277 @@
+[
+	{
+		"name": "$construct",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "match",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "remove",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "uuid",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$destruct",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "PrepareDocument",
+		"desc": "Load XML, preserve the black root fallback and ensure the Omnis theme group.",
+		"pvardefs": [
+			{
+				"name": "pBinary",
+				"type": "kBinary",
+				"subtype": 0,
+				"sublen": 0
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lBinary",
+				"type": "kBinary",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lDocument",
+				"type": "kObject",
+				"subtype": ".OXML.DOM Document",
+				"sublen": 0
+			},
+			{
+				"name": "lGroup",
+				"type": "kObject",
+				"subtype": ".OXML.DOM Types\\DOM Element",
+				"sublen": 0
+			},
+			{
+				"name": "lHasTheme",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lIndex",
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lNode",
+				"type": "kObject",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lNodes",
+				"type": "kObject",
+				"subtype": ".OXML.DOM Types\\DOM NodeList",
+				"sublen": 0
+			},
+			{
+				"name": "lSuccess",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lSVG",
+				"type": "kObject",
+				"subtype": ".OXML.DOM Types\\DOM Element",
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "CollectColors",
+		"desc": "Tokenize simple paint declarations using the original patterns and removal rules.",
+		"pvardefs": [
+			{
+				"name": "pPattern",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lLength",
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lMatch",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lRemove",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lStart",
+				"type": "kInteger",
+				"subtype": "k32bitint",
+				"sublen": 0
+			},
+			{
+				"name": "lUUID",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$LoadSVG",
+		"desc": "Load binary SVG. Returns true on success; failures preserve the previous template and matches.",
+		"pvardefs": [
+			{
+				"name": "pBinary",
+				"type": "kBinary",
+				"subtype": 0,
+				"sublen": 0
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "xml",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$GetMatches",
+		"desc": "Return a copy of the color list for editing by the caller.",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$GetError",
+		"desc": "Return the error from the most recent load.",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "RestoreColors",
+		"desc": "Restore or remove each token using a local copy of the caller's list.",
+		"pvardefs": [
+			{
+				"name": "pXML",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "pMatches",
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lMatch",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lMatches",
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lRemove",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lUUID",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lXML",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$BuildSVG",
+		"desc": "Render from the loaded template and caller choices. Optional pTemplate supports the existing removeColors adapter.",
+		"pvardefs": [
+			{
+				"name": "pMatches",
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "pFillTint",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "pStrokeTint",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "pTemplate",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lXML",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	}
+]

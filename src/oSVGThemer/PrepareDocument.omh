@@ -1,0 +1,40 @@
+Calculate iError as ''
+Do lDocument.$loadbinary(pBinary,iError) Returns lSuccess
+If not(lSuccess)
+	Quit method ''
+End If
+Do lDocument.$getelementsbytagname('svg') Returns lNodes
+If lNodes.$length=0
+	Calculate iError as 'Il documento non contiene un elemento svg.'
+	Quit method ''
+End If
+Do lNodes.$item(0) Returns lSVG
+# Black on the root is the fallback when viewed outside Omnis.
+Do lSVG.$setattribute('fill','black')
+Do lSVG.$setattribute('stroke','black')
+Do lSVG.$childnodes() Returns lNodes
+Calculate lHasTheme as kFalse
+For lIndex from 0 to lNodes.$length-1 step 1
+	Do lNodes.$item(lIndex) Returns lNode
+	If lNode.$nodetype=kXMLNodeElement
+		Calculate lHasTheme as lNode.$getattribute('id')='omTheme'
+		Break to end of loop
+	End If
+End For
+If not(lHasTheme)
+	Do lDocument.$createelement('g') Returns lGroup
+	Do lGroup.$setattribute('fill','var(--om-tint-color)')
+	Do lGroup.$setattribute('stroke','var(--om-tint-color)')
+	Do lGroup.$setattribute('id','omTheme')
+	While lNodes.$length>0
+		Do lNodes.$item(0) Returns lNode
+		Do lGroup.$appendchild(lNode)
+		Do lSVG.$removechild(lNode)
+	End While
+	Do lSVG.$appendchild(lGroup)
+End If
+Do lDocument.$savebinary(lBinary,iError,kFalse,kXMLFormatFull) Returns lSuccess
+If not(lSuccess)
+	Quit method ''
+End If
+Quit method utf8tochar(lBinary)

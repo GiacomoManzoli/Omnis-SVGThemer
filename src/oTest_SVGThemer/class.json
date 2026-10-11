@@ -1,0 +1,30 @@
+{
+	"classtype": "kObjectclass",
+	"omnisversion": "12.0",
+	"superclass": ".oMCP.oMCP\\MCPTest",
+	"designtaskname": "Startup_Task",
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+
+	],
+	"properties": {
+		"canremotedebugwhenlocked": false,
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componentinfo": {
+
+		},
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2026-10-11 19:41:51",
+		"desc": "Regression tests for SVG transformation and the black fallback.",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"issupercomponent": false,
+		"selfcontained": false,
+		"userinfo": "",
+		"version": ""
+	}
+}

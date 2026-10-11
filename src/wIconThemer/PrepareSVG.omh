@@ -1,0 +1,5 @@
+If iLoaded
+	Do iThemer.$BuildSVG(iMatches,iFillTint,iStrokeTint) Returns iXML
+	Do method RedrawPreview
+	Do $cinst.$redraw()
+End If

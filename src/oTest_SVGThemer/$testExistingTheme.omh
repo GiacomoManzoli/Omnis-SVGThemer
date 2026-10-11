@@ -1,0 +1,8 @@
+Do lThemer.$LoadSVG(chartoutf8('<svg><!--comment--><g id="omTheme" fill="var(--om-tint-color)" stroke="var(--om-tint-color)"><path fill="black"/></g></svg>')) Returns lSuccess
+Do $cinst.$asserttruthy(lSuccess,'existing theme load')
+Do lThemer.$GetMatches() Returns lMatches
+Do lThemer.$BuildSVG(lMatches,kTrue,kTrue) Returns lXML
+Calculate lRemainder as mid(lXML,pos('id="omTheme"',lXML)+len('id="omTheme"'))
+Do $cinst.$assertfalsy(pos('id="omTheme"',lRemainder),'no duplicate theme group')
+Do $cinst.$asserttruthy(pos('fill="black"',lXML)>0,'black preserved')
+Quit method lXML

@@ -1,0 +1,13 @@
+[
+	{
+		"name": "$event",
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		],
+		"empty": true
+	}
+]

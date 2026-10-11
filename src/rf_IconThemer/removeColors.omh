@@ -1,0 +1,2 @@
+Do iSVGThemer.$BuildSVG(iMatchList,kTrue,kTrue,pXML) Returns lXML
+Quit method lXML

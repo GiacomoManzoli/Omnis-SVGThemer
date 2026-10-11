@@ -1,0 +1,15 @@
+Do lThemer.$LoadSVG(chartoutf8('<svg><path/></svg>')) Returns lSuccess
+Do $cinst.$asserttruthy(lSuccess,'initial valid SVG')
+Do lThemer.$GetMatches() Returns lMatches
+Do lThemer.$BuildSVG(lMatches,kTrue,kTrue) Returns lBefore
+Do lThemer.$LoadSVG(chartoutf8('<svg>')) Returns lSuccess
+Do $cinst.$assertfalsy(lSuccess,'malformed XML rejected')
+Do lThemer.$GetError() Returns lError
+Do $cinst.$asserttruthy(lError,'malformed XML has an error')
+Do lThemer.$BuildSVG(lMatches,kTrue,kTrue) Returns lXML
+Do $cinst.$assertequal(lXML,lBefore,'failed load preserves previous SVG')
+Do lThemer.$LoadSVG(chartoutf8('<document/>')) Returns lSuccess
+Do $cinst.$assertfalsy(lSuccess,'non-SVG XML rejected')
+Do lThemer.$GetError() Returns lError
+Do $cinst.$asserttruthy(lError,'non-SVG error reported')
+Quit method lError

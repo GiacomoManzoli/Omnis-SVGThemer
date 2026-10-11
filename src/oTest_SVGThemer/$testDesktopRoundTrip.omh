@@ -1,0 +1,45 @@
+Do $libs.svgthemer1.$windows.wIconThemer.$open('*') Returns window
+Do $cinst.$asserttruthy(window,'desktop window opens')
+Do files.$define(path,isfile)
+Do files.$add('/private/tmp/svgthemer-desktop-check/source.svg',kTrue)
+Do window.$sendevent(evDrop,'pDragType',kDragOperatingSystem,'pDragValue',files)
+Calculate success as window.iLoaded
+Do $cinst.$asserttruthy(success,'desktop handles operating system drop event')
+Do $cinst.$asserttruthy(window.$objs.colors.$dividers.$count()=1,'complex grid has one removal divider')
+Do $cinst.$asserttruthy(window.$objs.colors.$objs.colorMatchCell.$dataname='iMatches.match','color declaration is bound to its row')
+Do $cinst.$asserttruthy(window.$objs.colors.$objs.removeCell.$dataname='iMatches.remove','checkbox is bound to its row')
+Do $cinst.$asserttruthy(window.iMatches.$linecount=2,'tool root black fallback is hidden from color choices')
+Do window.$objs.previewBlue.$sendevent(evClick)
+Do $cinst.$asserttruthy(window.iPreviewColor=rgb(35,95,210),'color button selects blue')
+Calculate window.iMatches.$line as 1
+Do $cinst.$asserttruthy(window.iMatches.remove,'removal starts enabled for the source color')
+Calculate window.iMatches.remove as kFalse
+Do window.$objs.colors.$objs.removeCell.$sendevent(evAfter)
+Calculate xml as window.iXML
+Do $cinst.$asserttruthy(pos('fill="#ff0000"',xml)>0,'checkbox preserves the source color and refreshes the SVG')
+Calculate window.iMatches.remove as kTrue
+Do window.$objs.colors.$objs.removeCell.$sendevent(evAfter)
+Calculate xml as window.iXML
+Do $cinst.$assertfalsy(pos('fill="#ff0000"',xml),'checkbox removes the source color and refreshes the SVG')
+Calculate window.iFillTint as kFalse
+Do window.$objs.chkFill.$sendevent(evClick)
+Calculate xml as window.iXML
+Do $cinst.$assertfalsy(pos('fill="var(--om-tint-color)"',xml),'fill checkbox updates SVG')
+Calculate window.iFillTint as kTrue
+Do window.$objs.chkFill.$sendevent(evClick)
+Do window.$ExportFile('/private/tmp/svgthemer-desktop-check/exported.svg') Returns success
+Do $cinst.$asserttruthy(success,'desktop exports SVG')
+Do file.$openfile('/private/tmp/svgthemer-desktop-check/exported.svg',kTrue) Returns success
+Do $cinst.$asserttruthy(success,'exported file exists')
+Do file.$readfile(binary) Returns success
+Do file.$closefile()
+Calculate xml as utf8tochar(binary)
+Do $cinst.$asserttruthy(pos('fill="black"',xml)>0,'black root fill survives file export')
+Do $cinst.$asserttruthy(pos('stroke="black"',xml)>0,'black root stroke survives file export')
+Do $cinst.$asserttruthy(pos('var(--om-tint-color)',xml)>0,'export uses dynamic theme')
+Do $cinst.$assertfalsy(pos('#ff0000',xml),'source color removed')
+Do $cinst.$assertfalsy(pos('rgb(210,55,65)',xml),'preview color is not exported')
+Calculate url as window.$objs.preview.$urlorcontrolname
+Do $cinst.$asserttruthy(pos('data:',url)=1,'desktop preview populated')
+Do window.$close()
+Quit method xml

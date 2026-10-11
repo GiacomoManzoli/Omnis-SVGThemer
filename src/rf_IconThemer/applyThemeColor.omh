@@ -1,0 +1,18 @@
+#
+Calculate omnisColor as pColor
+
+JavaScript:let r = omnisColor%256;
+JavaScript:omnisColor = (omnisColor-r)/256
+JavaScript:let g = omnisColor%256;
+JavaScript:omnisColor = (omnisColor-g)/256
+JavaScript:let b = omnisColor%256;
+JavaScript:let color = `rgb(${r},${g},${b})`
+
+#JavaScript:let color = "#"+((omnisColor)>>>0).toString(16).slice(-6);
+
+JavaScript:let nodes = document.querySelectorAll("[data-type='xml-preview']")
+JavaScript:console.log(nodes, color, omnisColor)
+JavaScript:nodes.forEach(e => e.style.setProperty("--om-tint-color",color))
+
+JavaScript:let root = document.documentElement;
+JavaScript:root.style.setProperty("--om-tint-color",color)

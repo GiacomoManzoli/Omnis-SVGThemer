@@ -1,0 +1,425 @@
+[
+	{
+		"name": "$construct",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$destruct",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$testSimpleSVG",
+		"desc": "MCP test method - run with execute_test",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lBefore",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lError",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lMatches",
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lRemainder",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lResult",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000
+			},
+			{
+				"name": "lSuccess",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lThemer",
+				"type": "kObject",
+				"subtype": "oSVGThemer",
+				"sublen": 0
+			},
+			{
+				"name": "lXML",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$testEmptySVG",
+		"desc": "MCP test method - run with execute_test",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lBefore",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lError",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lMatches",
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lRemainder",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lResult",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000
+			},
+			{
+				"name": "lSuccess",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lThemer",
+				"type": "kObject",
+				"subtype": "oSVGThemer",
+				"sublen": 0
+			},
+			{
+				"name": "lXML",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$testInvalidSVG",
+		"desc": "MCP test method - run with execute_test",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lBefore",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lError",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lMatches",
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lRemainder",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lResult",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000
+			},
+			{
+				"name": "lSuccess",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lThemer",
+				"type": "kObject",
+				"subtype": "oSVGThemer",
+				"sublen": 0
+			},
+			{
+				"name": "lXML",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$testTintOptions",
+		"desc": "MCP test method - run with execute_test",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lBefore",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lError",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lMatches",
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lRemainder",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lResult",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000
+			},
+			{
+				"name": "lSuccess",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lThemer",
+				"type": "kObject",
+				"subtype": "oSVGThemer",
+				"sublen": 0
+			},
+			{
+				"name": "lXML",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$testExistingTheme",
+		"desc": "MCP test method - run with execute_test",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "lBefore",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lError",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lMatches",
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lRemainder",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lResult",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000
+			},
+			{
+				"name": "lSuccess",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lThemer",
+				"type": "kObject",
+				"subtype": "oSVGThemer",
+				"sublen": 0
+			},
+			{
+				"name": "lXML",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$testDesktopRoundTrip",
+		"desc": "MCP test method - run with execute_test",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "binary",
+				"type": "kBinary",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "file",
+				"type": "kObject",
+				"subtype": ".FileOps.FileOps",
+				"sublen": 0
+			},
+			{
+				"name": "files",
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "isfile",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "lResult",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000
+			},
+			{
+				"name": "path",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "success",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "url",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "window",
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "xml",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$testDesktopInvalidFile",
+		"desc": "MCP test method - run with execute_test",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "binary",
+				"type": "kBinary",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "file",
+				"type": "kObject",
+				"subtype": ".FileOps.FileOps",
+				"sublen": 0
+			},
+			{
+				"name": "lResult",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000
+			},
+			{
+				"name": "success",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "url",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "window",
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "xml",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	}
+]

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g>
+    <path d="M11.07,31.04h-6.56c-1.81,0-3.28-1.47-3.28-3.28h0V4.8h0c0-1.81,1.47-3.28,3.28-3.28h19.68c1.81,0,3.28,1.47,3.28,3.28v4.92" fill="none" stroke="#575756" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path d="M9.43,24.48h0c-1.36,0-2.46-1.1-2.46-2.46h0c0-1.36,1.1-2.46,2.46-2.46h0c1.36,0,2.46,1.1,2.46,2.46h0c0,1.36-1.1,2.46-2.46,2.46h0Z" fill="none" stroke="#575756" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path d="M6.97,8.08h13.12" fill="none" stroke="#575756" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path d="M6.97,13.82h6.56" fill="none" stroke="#575756" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+  <path d="M30.36,20.33l-10,10-6-6" fill="none" stroke="#3eab3e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+</svg>

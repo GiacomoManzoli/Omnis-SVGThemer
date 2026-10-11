@@ -1,0 +1,2 @@
+Do iSVGThemer.$BuildSVG(iMatchList,ibFillTint,ibStrokeTint) Returns icXML
+Do method redrawXML

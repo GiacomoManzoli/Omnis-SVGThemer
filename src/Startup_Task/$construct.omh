@@ -1,0 +1,3 @@
+Calculate $libs.$name as "svgthemer1"
+
+Do $menus.mnuThemer.$openonce('MnuThemer')

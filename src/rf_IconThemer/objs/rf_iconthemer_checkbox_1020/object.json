@@ -1,0 +1,72 @@
+{
+	"ident": 1020,
+	"order": 20,
+	"objtype": "kComponent",
+	"componentlib": "jsCheckbox",
+	"componentctrl": "Checkbox Control",
+	"properties": {
+		"active": true,
+		"alpha": 255,
+		"ariadescribedby": "",
+		"arialabel": "",
+		"arialabelledby": "",
+		"backalpha": 0,
+		"backcolor": "kJSThemeColorBackground",
+		"bordercolor": "kJSThemeColorBorder",
+		"checkboxcolor": "kJSThemeColorSecondary",
+		"componentinfo": {
+
+		},
+		"contextmenu": "",
+		"cssclassname": "",
+		"dataname": "ibStrokeTint",
+		"defaultinactiveappearance": true,
+		"desgroup": 0,
+		"designactive": true,
+		"deslock": false,
+		"disabledefaultcontextmenu": false,
+		"disablesystemfocus": true,
+		"dropmode": "kAcceptNone",
+		"effect": "kJSborderNone",
+		"events": "evClick",
+		"fieldstyle": "",
+		"font": 1,
+		"fontsize": 11,
+		"fontstyle": "kPlain",
+		"iconid": 0,
+		"linestyle": 1,
+		"nexttabobject": "",
+		"objlink": 0,
+		"preventlayoutanimation": false,
+		"removefromtaborder": false,
+		"sidepanel": false,
+		"sidepanelmode": "kSidePanelModeNone",
+		"text": "Set stroke tint",
+		"textcolor": "kColorDefault",
+		"tooltip": "",
+		"userinfo": "",
+		"visible": true
+	},
+	"layout": {
+		"320": {
+			"left": 144,
+			"top": 336,
+			"width": 120,
+			"height": 44,
+			"dragborder": false,
+			"edgefloat": "kEFnone",
+			"errortextpos": "kJSErrorTextPosUnder",
+			"visible": true
+		},
+		"1024": {
+			"left": 532,
+			"top": 88,
+			"width": 152,
+			"height": 24,
+			"dragborder": false,
+			"edgefloat": "kEFleftRight",
+			"errortextpos": "kJSErrorTextPosUnder",
+			"visible": true
+		}
+	}
+}

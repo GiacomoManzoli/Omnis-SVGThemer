@@ -1,0 +1,14 @@
+Do lThemer.$LoadSVG(chartoutf8('<svg><style>.a{fill:#ff0000;stroke:blue;}</style><path class="a" fill="none" stroke="#00ff00"/></svg>')) Returns lSuccess
+Do $cinst.$asserttruthy(lSuccess,'CSS and attributes load')
+Do lThemer.$GetMatches() Returns lMatches
+Do lThemer.$BuildSVG(lMatches,kFalse,kTrue) Returns lXML
+Do $cinst.$assertfalsy(pos('fill="var(--om-tint-color)"',lXML),'fill tint disabled')
+Do $cinst.$asserttruthy(pos('stroke="var(--om-tint-color)"',lXML)>0,'stroke tint enabled')
+Do $cinst.$assertfalsy(pos('#ff0000',lXML),'simple CSS fill removed')
+Do $cinst.$assertfalsy(pos('stroke:blue;',lXML),'simple CSS stroke removed')
+Do $cinst.$asserttruthy(pos('fill="none"',lXML)>0,'none preserved')
+Do lThemer.$BuildSVG(lMatches,kTrue,kFalse) Returns lXML
+Do $cinst.$asserttruthy(pos('fill="var(--om-tint-color)"',lXML)>0,'fill tint enabled')
+Do $cinst.$assertfalsy(pos('stroke="var(--om-tint-color)"',lXML),'stroke tint disabled')
+Do $cinst.$asserttruthy(pos('stroke="black"',lXML)>0,'root fallback remains')
+Quit method lXML

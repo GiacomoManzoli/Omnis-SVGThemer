@@ -1,0 +1,175 @@
+[
+	{
+		"name": "$construct",
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "match",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "remove",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			},
+			{
+				"name": "uuid",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$init",
+		"clientexec": true,
+		"desc": "$init() client executed method called to perform client initialization after the remote form and client scripts have been loaded",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$destruct",
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "downloadFile",
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "binFile",
+				"type": "kBinary",
+				"subtype": 0,
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "fileUpload",
+		"clientexec": false,
+		"desc": "Load an uploaded SVG and update the form when parsing succeeds.",
+		"pvardefs": [
+			{
+				"name": "pBinary",
+				"type": "kBinary",
+				"subtype": 0,
+				"sublen": 100000000
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lError",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "lSuccess",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "parseXML",
+		"clientexec": false,
+		"desc": "Delegate SVG parsing to oSVGThemer and refresh the color choices.",
+		"pvardefs": [
+			{
+				"name": "pBinary",
+				"type": "kBinary",
+				"subtype": 0,
+				"sublen": 100000000
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lSuccess",
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0
+			}
+		]
+	},
+	{
+		"name": "prepareSVG",
+		"clientexec": false,
+		"desc": "Build the transformed SVG from the form's color choices and update previews.",
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "removeColors",
+		"clientexec": false,
+		"desc": "Compatibility adapter: the transformation is implemented by oSVGThemer.",
+		"pvardefs": [
+			{
+				"name": "pXML",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "lXML",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "redrawXML",
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "applyThemeColor",
+		"clientexec": true,
+		"pvardefs": [
+			{
+				"name": "pColor",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "omnisColor",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	}
+]

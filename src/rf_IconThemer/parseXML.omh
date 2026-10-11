@@ -1,0 +1,5 @@
+Do iSVGThemer.$LoadSVG(pBinary) Returns lSuccess
+If lSuccess
+	Do iSVGThemer.$GetMatches() Returns iMatchList
+End If
+Quit method lSuccess

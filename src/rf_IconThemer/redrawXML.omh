@@ -1,0 +1,6 @@
+#
+Calculate $cinst.$objs.html_preview_96.$html as con('<div data-type="xml-preview">',icXML,"</div>")
+Calculate $cinst.$objs.html_preview_72.$html as con('<div data-type="xml-preview">',icXML,"</div>")
+Calculate $cinst.$objs.html_preview_32.$html as con('<div data-type="xml-preview">',icXML,"</div>")
+Calculate $cinst.$objs.html_preview_24.$html as con('<div data-type="xml-preview">',icXML,"</div>")
+Calculate $cinst.$objs.html_preview_16.$html as con('<div data-type="xml-preview">',icXML,"</div>")

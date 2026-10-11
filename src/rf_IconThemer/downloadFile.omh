@@ -1,0 +1,12 @@
+# download file from list
+
+
+Do chartoutf8(icXML) Returns binFile
+Calculate tJSFileBinData as binFile
+
+Do iJSFileRow.$define(iJSFileName,iJSMediaType,iJSVariableName)
+
+Calculate iFileName as con("themed_",iFileName)
+
+Do iJSFileRow.$assigncols(iFileName,'image/svg+xml',nam(tJSFileBinData))
+Do $cinst.$objs.JSFormFile.$action.$assign(kJSFileActionDownload) Returns #F

@@ -1,0 +1,13 @@
+If len(pTemplate)=0
+	Calculate lXML as iTemplate
+Else
+	Calculate lXML as pTemplate
+End If
+If not(pFillTint)
+	Calculate lXML as replace(lXML,'fill="var(--om-tint-color)"','')
+End If
+If not(pStrokeTint)
+	Calculate lXML as replace(lXML,'stroke="var(--om-tint-color)"','')
+End If
+Do method RestoreColors (lXML,pMatches) Returns lXML
+Quit method lXML

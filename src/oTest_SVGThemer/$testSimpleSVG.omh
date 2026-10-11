@@ -1,0 +1,19 @@
+Do lThemer.$LoadSVG(chartoutf8('<svg xmlns="http://www.w3.org/2000/svg"><path fill="#ff0000" stroke="none" d="M0 0h10v10z"/></svg>')) Returns lSuccess
+Do $cinst.$asserttruthy(lSuccess,'SVG load')
+Do lThemer.$GetMatches() Returns lMatches
+Do lThemer.$BuildSVG(lMatches,kTrue,kTrue) Returns lXML
+Do $cinst.$asserttruthy(pos('fill="black"',lXML)>0,'black root fill')
+Do $cinst.$asserttruthy(pos('stroke="black"',lXML)>0,'black root stroke')
+Do $cinst.$asserttruthy(pos('var(--om-tint-color)',lXML)>0,'dynamic theme')
+Do $cinst.$asserttruthy(pos('stroke="none"',lXML)>0,'preserve none')
+Do $cinst.$assertfalsy(pos('#ff0000',lXML),'remove selected color')
+Do $cinst.$asserttruthy(pos('M0 0h10v10z',lXML)>0,'preserve geometry')
+# Explicitly preserve all colors on a second rendering.
+For lMatches.$line from 1 to lMatches.$linecount step 1
+	Calculate lMatches.remove as kFalse
+End For
+Calculate lMatches.$line as 1
+Do lThemer.$BuildSVG(lMatches,kTrue,kTrue) Returns lXML
+Do $cinst.$assertequal(lMatches.$line,1,'render preserves caller selection')
+Do $cinst.$asserttruthy(pos('#ff0000',lXML)>0,'restore unchecked color')
+Quit method lXML

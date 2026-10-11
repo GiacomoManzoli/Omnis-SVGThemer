@@ -1,0 +1,13 @@
+Do method PrepareDocument (pBinary) Returns xml
+If xml=''
+	Quit method kFalse
+End If
+Calculate iTemplate as xml
+Do iMatches.$clear()
+# Dichiarazioni CSS semplici: fill:#ff0000; e stroke:none; (in style o nei blocchi CSS).
+# Registra ogni dichiarazione nell'elenco colori e la sostituisce con un segnaposto.
+Do method CollectColors ("(fill|stroke): ?[a-zA-Z0-9#\(\),]*;")
+# Attributi SVG semplici: fill="#ff0000" e stroke="none".
+# Registra gli attributi con lo stesso meccanismo per rimuoverli o ripristinarli alla generazione.
+Do method CollectColors ('(fill|stroke)[ \t]*=[ \t]*"[a-zA-Z0-9#\(\),]*"')
+Quit method kTrue

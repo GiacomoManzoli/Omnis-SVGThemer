@@ -1,0 +1,18 @@
+Calculate lUUID as '1'
+Repeat
+	Do rxpos(pPattern,mid(iTemplate,int(lUUID)),kTrue,kFalse,lLength) Returns lStart
+	If lStart
+		Calculate lStart as int(lUUID)+lStart-1
+		Calculate lMatch as mid(iTemplate,lStart,lLength)
+		# Keep the root fallback attributes in the SVG and out of the removal list.
+		If pos('="black"',lMatch)>0&lStart>pos('<svg',iTemplate)&lStart<pos('<svg',iTemplate)+pos('>',mid(iTemplate,pos('<svg',iTemplate)))
+			Calculate lUUID as con(lStart+lLength)
+		Else
+			Calculate lUUID as OW3.$makeuuid(kFalse)
+			Calculate iTemplate as con(left(iTemplate,lStart-1),lUUID,mid(iTemplate,lStart+lLength))
+			Calculate lRemove as pos('none',lMatch)=0&pos('black',lMatch)=0
+			Do iMatches.$add(lMatch,lRemove,lUUID)
+			Calculate lUUID as '1'
+		End If
+	End If
+Until lStart=0

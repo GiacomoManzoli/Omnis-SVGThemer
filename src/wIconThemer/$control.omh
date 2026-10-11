@@ -1,0 +1,4 @@
+On evDrop
+	If pDragType=kDragOperatingSystem
+		Do method HandleDrop (pDragValue)
+	End If
