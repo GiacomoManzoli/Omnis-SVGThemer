@@ -67,7 +67,7 @@
 		"top": 0,
 		"touchgestures": false,
 		"userinfo": "",
-		"visible": false,
+		"visible": true,
 		"width": 192
 	},
 	"objlinkname": "colors"
